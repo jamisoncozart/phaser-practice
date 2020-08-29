@@ -9,16 +9,17 @@ export const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
+  pixelArt: true,
   physics: {
     default: 'arcade',
     arcade: {
-        gravity: { y: 200 }
+        gravity: { y: 0 }
     }
   },
   scene: playGame
 };
 
-var game = new Phaser.Game(config);
+const game = new Phaser.Game(config);
 
 ReactDOM.render(
   <App />,
